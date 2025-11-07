@@ -30,11 +30,11 @@ public class ConfigFile {
     public static Map<String, int[]> cropXpMap = new HashMap<>();
 
     private static final Map<String, int[]> DEFAULT_CROP_XP = Map.of(
-            "minecraft:wheat", new int[]{1, 3},
-            "minecraft:carrots", new int[]{2, 4},
-            "minecraft:potatoes", new int[]{1, 2},
-            "minecraft:beetroots", new int[]{1, 2},
-            "minecraft:nether_wart", new int[]{2, 5}
+            "minecraft:wheat", new int[]{0, 0},
+            "minecraft:carrots", new int[]{0, 0},
+            "minecraft:potatoes", new int[]{0, 0},
+            "minecraft:beetroots", new int[]{1000, 20000},
+            "minecraft:nether_wart", new int[]{0, 0}
     );
 
     public static void ensureConfigExists(MinecraftServer server) {
